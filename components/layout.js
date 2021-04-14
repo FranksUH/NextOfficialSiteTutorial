@@ -39,8 +39,10 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         }
-      </header>
+      </header>      
       <main>{children}</main>
+      {!home && 
+      <Link href='/'>Back to Home</Link>}
     </div>
   )
 }
